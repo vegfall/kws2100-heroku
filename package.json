@@ -1,0 +1,17 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.10"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm test && vite build",
+    "test": "npm run test:client",
+    "test:client": "cd client && npm test",
+    "prettier:update": "prettier --write .",
+    "prepare": "husky"
+  }
+}
