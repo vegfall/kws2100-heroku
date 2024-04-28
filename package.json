@@ -7,8 +7,10 @@
     "vite": "^5.2.10"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "npm test && vite build",
+    "dev": "npm run dev:client",
+    "dev:client": "cd client && npm run dev",
+    "build": "npm run build:client",
+    "build:client": "cd client && npm run build",
     "test": "npm run test:client",
     "test:client": "cd client && npm test",
     "prettier:update": "prettier --write .",
